@@ -7,6 +7,9 @@ todos = [
   },   
   {
     'name': 'Estudar JavaScript', 'complete': False
+  },
+  {
+    'name': 'Fazer exercicio 1', 'complete': True
   }
 ]
 

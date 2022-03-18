@@ -7,7 +7,19 @@
   <title>Todso list</title>
 </head>
 <body>
-  <p>{{ todos[0].name }}</p>
-  <p>{{ todos[1].name }}</p>
+  {% for item in todos %}
+
+    {% if item.complete == False %}
+    
+      <p>{{ item.name }}</p>
+
+    {% else %}
+
+      <p><s>{{ item.name }}</s></p>
+
+  
+    {% endif %}
+  
+  {% endfor %}
 </body>
 </html>
